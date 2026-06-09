@@ -5,7 +5,8 @@
  * IoT Water Quality Monitoring API
  * OpenAPI spec version: 0.1.0
  */
+import type { AlertUpdateStatus } from './alertUpdateStatus';
 
-export interface HealthStatus {
-  status: string;
+export interface AlertUpdate {
+  status: AlertUpdateStatus;
 }

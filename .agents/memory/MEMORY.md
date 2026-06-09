@@ -1,0 +1,2 @@
+- [Drizzle date serialization](drizzle-date-serialization.md) — Drizzle returns Date objects; Zod generated schemas expect strings. Fix: JSON.parse(JSON.stringify(rows)) before .parse()
+- [Raw SQL camelCase](raw-sql-camelcase.md) — Raw db.execute() SQL returns snake_case columns; alias them explicitly ("sensor_id" AS "sensorId") for Zod schema compatibility
