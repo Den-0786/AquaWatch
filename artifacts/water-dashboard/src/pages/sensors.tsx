@@ -42,7 +42,7 @@ function BatteryBar({ level }: { level: number }) {
   return (
     <div className="flex items-center gap-1.5">
       <Battery className="w-3.5 h-3.5 text-muted-foreground" />
-      <div className="w-10 h-1.5 rounded-full bg-muted overflow-hidden">
+      <div className="w-10 h-1.5 rounded-full bg-muted overflow-hidden" role="progressbar" aria-valuenow={level} aria-valuemin={0} aria-valuemax={100}>
         <div className={`h-full rounded-full ${color} transition-all`} style={{ width: `${level}%` }} />
       </div>
       <span className="text-xs text-muted-foreground">{level}%</span>
