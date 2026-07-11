@@ -156,3 +156,32 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+/* Toast Animations */
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes progress-shrink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+.animate-progress {
+  animation: progress-shrink linear forwards;
+}
+
+.animate-in {
+  animation: slide-in-from-right 0.3s ease-out forwards;
+}
